@@ -1,0 +1,30 @@
+package Test;
+
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String[] args) {
+ 
+   Scanner input = new Scanner(System.in);
+  
+   int nota1, nota2, nota3;
+   
+   System.out.println("Informe as notas: ");
+   System.out.println("Nota 1: ");
+   nota1 = input.nextInt();
+   
+   System.out.println("Nota 2: ");
+   nota2 = input.nextInt();
+
+   System.out.println("Nota 3: ");
+   nota3 = input.nextInt();
+     
+   String media = (nota1+nota2+nota3)/3 >= 60 ? "Aprovado" : "Reprovado";
+   
+   
+   System.out.println("O resultado e: " + media);
+   input.close();
+  }
+}
+
