@@ -1,0 +1,30 @@
+package Test;
+
+import java.util.Scanner;
+
+public class Main {
+
+
+  public static void main(String[] args) {
+  
+   long totalMilisegundos = System.currentTimeMillis() - 10800000;
+   
+   
+  //Cálculo de segundos   
+   long totalSegundos = totalMilisegundos / 1000;
+   long segundoAtual = totalSegundos % 60;
+
+  //Cálculo de minutos  
+   long totalMinutos = totalSegundos / 60;
+   long minutoAtual = totalMinutos % 60;
+
+  //Cálculo de hora   
+   long totalHora = totalMinutos / 60;
+   long horaAtual = totalHora % 24;
+   
+   
+   System.out.println("Horário atual brasileiro é: ");
+   System.out.println(horaAtual + ":" + minutoAtual + ":" + segundoAtual);
+
+ }
+}
