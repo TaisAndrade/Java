@@ -1,11 +1,9 @@
-package Test;
 
 import java.util.Scanner;
 
 public class Main {
 
-
-  public static void main(String[] args) {
+ public static void main(String[] args) {
   
    long totalMilisegundos = System.currentTimeMillis() - 10800000;
    
