@@ -1,0 +1,36 @@
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+public class Main {
+
+  public static void main(String[] args) {
+  
+//Alocação Dinâmica, utiliza node, fácil inserção e remoção. 
+  LinkedList <String> lista = new LinkedList<>();
+  System.out.println("Linked List");
+  lista.add("Letra A");
+  lista.add("Letra B");
+  lista.add("Letra C");
+  lista.add("Letra D"); 
+  
+  System.out.println("Posição 1: "+ lista.get(1));
+  
+ //Insere 'X' entre Posição 'A' e 'B'
+  lista.add(1, "Letra X");
+  System.out.println("Posição 1 depois da inserção: " + lista.get(1));
+ 
+ //Alocação Estática, mais rápida, difícil inserção e remoção.
+  ArrayList <String> lista2 = new ArrayList <> (); // } String[] lista2 = new String[4];
+  lista2.add("Letra E");
+  lista2.add("Letra F");
+  lista2.add("Letra G");
+  lista2.add("Letra H");
+  
+  System.out.println();
+  System.out.println("Array List");
+  System.out.println(lista2.get(1));
+  
+  }
+}
