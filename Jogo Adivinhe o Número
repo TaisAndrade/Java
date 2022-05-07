@@ -1,0 +1,43 @@
+
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class JogoAdivinheONumero {
+
+ public static void main(String[] args) {
+
+   Scanner input = new Scanner(System.in);
+   Random random = new Random(); //gera um número aleatório
+  
+   boolean acerto = false;
+   int tentativas = 6;
+   int numeroSecreto = random.nextInt(250);
+   long palpite = 0;
+  
+   while (tentativas > 0 && acerto == false){
+
+    System.out.println("Adivinhe qual o número?");
+    palpite = input.nextInt();
+    
+      if(numeroSecreto == palpite) {
+       System.out.println("VOCÊ ACERTOU!");
+       acerto = true;
+       System.out.println();
+        
+      } else if(palpite < numeroSecreto) {
+         --tentativas;
+         System.out.println("Tente um número maior! " + tentativas + " Tentativas restantes");
+         System.out.println();
+    
+        } else {
+          --tentativas;
+          System.out.println("Tente um número menor! " + tentativas + " Tentativas restantes");
+          System.out.println();  
+         }    
+   }
+ 
+   input.close();
+ 
+  }
+}
