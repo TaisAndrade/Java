@@ -11,7 +11,7 @@ import java.util.Scanner;
     /*int numAlunos = 10;
      double [] notaAlunos = new double[numAlunos];*/
   
-    double[] notaAlunos = new double[4];  
+    double[] notaAlunos = new double[10];  
  
    try{ 
  
